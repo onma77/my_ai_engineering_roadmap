@@ -1,4 +1,5 @@
 ## lesson for the day.
+# dev environment.
 1. system foundation and setup.
 System foundation is the process of preparing your computer with the operating system and essential tools required for software development.
 * installation of operating system, for ubuntu(sudo apt update && sudo apt install -y build-essential git curl wget unzip).
