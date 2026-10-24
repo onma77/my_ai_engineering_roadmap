@@ -31,3 +31,6 @@ print(matrix)
 
 # how AI uses matrices
 neural network uses matrices to transform numerical inputs into outputs. for example, a network might recieve numerical representations of words and transform them as it processes a sentence.
+
+# what is a dot product
+the dot product is an operation that multiplies corresponding number in two vectors and add the result.
