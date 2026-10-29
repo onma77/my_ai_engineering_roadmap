@@ -1,6 +1,6 @@
 # linear algebra intuition
 # vector 
-is simply a list of numbers.
+is simply a list of numbers.(with a direction and magnitude. in AI, vectors represents data points, features, or parameters.)
 for example 
 
 ```py
