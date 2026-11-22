@@ -67,3 +67,72 @@ I now understand that dimensionality reduction is not simply deleting features. 
 - Kernel PCA: Nonlinear dimensionality reduction.
 
 **Key understanding:** Fewer dimensions can produce simpler, faster models without necessarily losing significant information.
+
+
+# Singular Value Decomposition (SVD)
+
+### What I Learned
+SVD is a matrix factorization technique that breaks any matrix into three components. It helps reveal hidden patterns, reduce data size, remove noise and solve mathematical problems.
+
+### Key Concepts
+
+**1. SVD Decomposition**
+
+\[
+A=U\Sigma V^T
+\]
+
+- **U:** Represents rotation in the output space.
+- **Σ (Sigma):** Contains singular values that determine scaling.
+- **Vᵀ:** Represents rotation in the input space.
+
+**2. Singular Values**
+
+Singular values measure how important each direction is. Larger values represent more significant information, while smaller values contribute less.
+
+**3. Truncated SVD**
+
+Keeps only the largest singular values to create a lower-rank approximation of the original matrix. This helps with compression while preserving important information.
+
+**4. Practical Applications**
+- Image compression: Reduces storage requirements.
+- Recommendation systems: Predicts missing user ratings.
+- NLP (LSA): Identifies hidden relationships between words and documents.
+- Noise reduction: Removes less significant components.
+- Pseudoinverse: Solves least-squares problems.
+
+### Mathematical Rough Work
+
+SVD:
+
+\[
+A=U\Sigma V^T
+\]
+
+Relationship between singular vectors:
+
+\[
+Av_i=\sigma_i u_i
+\]
+
+Pseudoinverse:
+
+\[
+A^+=V\Sigma^+U^T
+\]
+
+Low-rank approximation:
+
+\[
+A_k=\sum_{i=1}^{k}\sigma_i u_i v_i^T
+\]
+
+### Connection to PCA
+
+I learned that PCA is closely connected to SVD. When the data is centered, SVD identifies the same principal directions used by PCA.
+
+### My Main Takeaway
+
+SVD is useful because it works on matrices of different shapes and reveals their underlying structure. I now understand how keeping only the most important singular values makes compression, dimensionality reduction and noise removal possible.
+
+**Key understanding:** SVD simplifies complex matrices by separating their most important patterns from less significant information.
